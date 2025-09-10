@@ -1,5 +1,7 @@
 # python-notes
 
+_हिंदी में भी उपलब्ध: [README_HI.md](README_HI.md)_
+
 A structured collection of Python lessons and exercises organized into **basic** and **advanced** levels.
 
 This repository is ideal for:
