@@ -29,178 +29,102 @@ Exercises come with solutions, allowing you to check your understanding after tr
 ## Requirements
 
 - Python 3.8+  
-- Install packages (if needed) with:  
+- Install packages (if needed) with:
+
 ```bash
-  pip install -r requirements.txt
-```
+pip install -r requirements.txt
+````
 
 ---
 
 ## Basic - Overview
 
-**01_printing_and_comments.py**
-- Printing text, numbers, multiple items
-- Escape characters (`\n`, `\t`)
-- End and separator options in `print()`
-- Single-line vs multi-line comments
-- Docstrings
-
-**02_variables_and_types.py**
-- Variable naming rules
-- Dynamic typing in Python
-- Common data types: int, float, str, bool, None
-- Type checking (`type()`)
-- Type casting (`int()`, `float()`, `str()`)
-
-**03_operators.py**
-- Arithmetic, comparison, logical
-- Assignment operators (`+=`, `-=`, etc.)
-- Membership operators (`in`, `not in`)
-- Identity operators (`is`, `is not`)
-
-**04_input_output.py**
-- `input()` basics
-- Converting input types
-- f-strings, `.format()`, `%` formatting
-
-**05_conditionals.py**
-- if, elif, else
-- Nested if statements
-- Short-hand if
-- Common pitfalls (indentation, truthy/falsy values)
-
-**06_loops.py**
-- `for` loop with `range()`
-- Looping through strings, lists, dicts
-- `while` loop basics
-- `break`, `continue`, `pass`
-- Nested loops
-
-**07_functions.py**
-- Defining and calling functions
-- Parameters vs arguments
-- Default arguments
-- Return values
-- Scope (local vs global)
-- Lambda functions
-
-**08_collections.py**
-- Lists: indexing, slicing, methods
-- Tuples: immutability
-- Sets: uniqueness, operations (union, intersection)
-- Dictionaries: keys, values, methods
-
-**09_strings_in_depth.py**
-- Indexing, slicing, stepping
-- String methods (`find`, `replace`, `split`, `join`)
-- Escape sequences and raw strings
-- f-strings advanced formatting
-
-**10_file_handling.py**
-- Reading (`read`, `readline`, `readlines`)
-- Writing (`write`, `writelines`)
-- File modes (`r`, `w`, `a`, `x`)
-- Context manager (`with open(...)`)
-
-**11_exceptions.py**
-- Try/except basics
-- Catching specific exceptions
-- `finally` and `else` blocks
-- Raising exceptions manually
-
-**12_classes_objects.py**
-- Defining classes
-- Attributes and methods
-- `__init__` constructor
-- `self` keyword explained
-- Simple inheritance
-
-1. [Printing & Comments](basic/01_printing_and_comments.py)  
-2. [Variables & Types](basic/02_variables_and_types.py)  
-3. [Operators](basic/03_operators.py)  
-4. [Input & Output](basic/04_input_output.py)  
-5. [Conditionals](basic/05_conditionals.py)  
-6. [Loops](basic/06_loops.py)  
-7. [Functions](basic/07_functions.py)  
-8. [Collections (lists, tuples, sets, dicts)](basic/08_collections.py)  
-9. [Strings in Depth](basic/09_strings_in_depth.py)  
-10. [File Handling](basic/10_file_handling.py)  
-11. [Exceptions](basic/11_exceptions.py)  
-12. [Classes & Objects](basic/12_classes_objects.py)  
-
-Or see everything in one file: [solutions_basic.py](basic/solutions_basic.py)
+| File                                                                | Description                                                                                             |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| [01\_printing\_and\_comments.py](basic/01_printing_and_comments.py) | Printing text, numbers, multiple items, escape characters, `print()` options, comments, and docstrings. |
+| [02\_variables\_and\_types.py](basic/02_variables_and_types.py)     | Variable naming, dynamic typing, common data types, type checking, and type casting.                    |
+| [03\_operators.py](basic/03_operators.py)                           | Arithmetic, comparison, logical, assignment, membership, and identity operators.                        |
+| [04\_input\_output.py](basic/04_input_output.py)                    | Taking input, type conversion, f-strings, `.format()`, and `%` formatting.                              |
+| [05\_conditionals.py](basic/05_conditionals.py)                     | `if/elif/else` statements, nested ifs, shorthand if, truthy/falsy values.                               |
+| [06\_loops.py](basic/06_loops.py)                                   | `for` and `while` loops, break/continue/pass, nested loops.                                             |
+| [07\_functions.py](basic/07_functions.py)                           | Defining functions, arguments, return values, scope, and lambda functions.                              |
+| [08\_collections.py](basic/08_collections.py)                       | Lists, tuples, sets, dictionaries, and common operations.                                               |
+| [09\_strings\_in\_depth.py](basic/09_strings_in_depth.py)           | Indexing, slicing, string methods, escape sequences, and f-string formatting.                           |
+| [10\_file\_handling.py](basic/10_file_handling.py)                  | Reading/writing files, file modes, and context managers.                                                |
+| [11\_exceptions.py](basic/11_exceptions.py)                         | Try/except blocks, catching specific exceptions, raising exceptions, and finally/else usage.            |
+| [12\_classes\_objects.py](basic/12_classes_objects.py)              | Classes, attributes, methods, constructors, `self`, and simple inheritance.                             |
+| [solutions\_basic.py](basic/solutions_basic.py)                     | Consolidated solutions and examples from all basic topics.                                              |
 
 ---
 
 ## Advanced - Overview
 
-**01\_comprehensions.py** → list, dict, set comprehensions, generator expressions
-**02\_modules\_packages.py** → importing built-ins, creating custom modules
-**03\_standard\_libraries.py** → intro to `math`, `random`, `datetime`, `os`, `sys`
-**04\_oop\_advanced.py** → class vs instance variables, encapsulation, polymorphism, overriding
-**05\_custom\_exceptions.py** → raising and handling custom exception classes
-**06\_virtualenv\_pip.py** → creating virtual environments, installing with pip
-
-
-1. [Comprehensions](advanced/01_comprehensions.py)  
-2. [Modules & Packages](advanced/02_modules_packages.py)  
-3. [Standard Libraries](advanced/03_standard_libraries.py)  
-4. [OOP Advanced](advanced/04_oop_advanced.py)  
-5. [Custom Exceptions](advanced/05_custom_exceptions.py)  
-6. [Virtualenv & pip](advanced/06_virtualenv_pip.py)  
-
-Or see everything in one file: [solutions_advanced.py](advanced/solutions_advanced.py)
+| File                                                            | Description                                                                         |
+| --------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| [01\_comprehensions.py](advanced/01_comprehensions.py)          | List, dict, set comprehensions and generator expressions.                           |
+| [02\_modules\_packages.py](advanced/02_modules_packages.py)     | Importing built-in modules and creating custom modules/packages.                    |
+| [03\_standard\_libraries.py](advanced/03_standard_libraries.py) | Introduction to `math`, `random`, `datetime`, `os`, and `sys`.                      |
+| [04\_oop\_advanced.py](advanced/04_oop_advanced.py)             | Advanced OOP: encapsulation, polymorphism, overriding, class vs instance variables. |
+| [05\_custom\_exceptions.py](advanced/05_custom_exceptions.py)   | Raising and handling custom exception classes.                                      |
+| [06\_virtualenv\_pip.py](advanced/06_virtualenv_pip.py)         | Creating virtual environments and installing packages with pip.                     |
+| [solutions\_advanced.py](advanced/solutions_advanced.py)        | Consolidated solutions and examples from all advanced topics.                       |
 
 ---
 
 ## Exercises
 
-Each exercise has **theory questions, coding tasks, and stretch challenges**.  
+Each exercise has **theory questions, coding tasks, and stretch challenges**.
 Solutions are provided in matching `_solutions.py` files.
 
-- [01_exercises.md](advanced/exercises/01_exercises.md) → [solutions](advanced/exercises/01_exercises_solutions.py)  
-- [02_exercises.md](advanced/exercises/02_exercises.md) → [solutions](advanced/exercises/02_exercises_solutions.py)  
-- [03_exercises.md](advanced/exercises/03_exercises.md) → [solutions](advanced/exercises/03_exercises_solutions.py)  
-- [04_exercises.md](advanced/exercises/04_exercises.md) → [solutions](advanced/exercises/04_exercises_solutions.py)  
-- [05_exercises.md](advanced/exercises/05_exercises.md) → [solutions](advanced/exercises/05_exercises_solutions.py)  
-- [06_exercises.md](advanced/exercises/06_exercises.md) → [solutions](advanced/exercises/06_exercises_solutions.py)  
+| Exercises                                              | Solutions                                                                   |
+| ------------------------------------------------------ | --------------------------------------------------------------------------- |
+| [01\_exercises.md](advanced/exercises/01_exercises.md) | [01\_exercises\_solutions.py](advanced/exercises/01_exercises_solutions.py) |
+| [02\_exercises.md](advanced/exercises/02_exercises.md) | [02\_exercises\_solutions.py](advanced/exercises/02_exercises_solutions.py) |
+| [03\_exercises.md](advanced/exercises/03_exercises.md) | [03\_exercises\_solutions.py](advanced/exercises/03_exercises_solutions.py) |
+| [04\_exercises.md](advanced/exercises/04_exercises.md) | [04\_exercises\_solutions.py](advanced/exercises/04_exercises_solutions.py) |
+| [05\_exercises.md](advanced/exercises/05_exercises.md) | [05\_exercises\_solutions.py](advanced/exercises/05_exercises_solutions.py) |
+| [06\_exercises.md](advanced/exercises/06_exercises.md) | [06\_exercises\_solutions.py](advanced/exercises/06_exercises_solutions.py) |
 
 ---
 
 ## How to Contribute
 
-We welcome contributions from learners, instructors, and developers!  
+We welcome contributions from learners, instructors, and developers!
 
-Here’s how you can help:
+1. **Suggest New Lessons or Topics**
 
-1. **Suggest New Lessons or Topics**  
-   - Open an issue describing the topic or concept you think should be added.  
-   - Include a brief explanation and any relevant resources.
+   * Open an issue describing the topic or concept you think should be added.
+   * Include a brief explanation and any relevant resources.
 
-2. **Improve Existing Lessons**  
-   - Fix typos, improve explanations, or add better examples.  
-   - Make a pull request (PR) with your improvements.
+2. **Improve Existing Lessons**
 
-3. **Add Exercises or Projects**  
-   - Create practical exercises related to any lesson.  
-   - Include a solution file and make sure it runs correctly.  
-   - Follow the existing naming conventions: `NN_exercises.md` and `NN_exercises_solutions.py`.
+   * Fix typos, improve explanations, or add better examples.
+   * Make a pull request (PR) with your improvements.
 
-4. **Report Bugs or Errors**  
-   - If a code snippet doesn’t run or behaves unexpectedly, open an issue.  
-   - Provide the error message and the Python version you used.
+3. **Add Exercises or Projects**
 
-5. **Code Style and Standards**  
-   - Use clear, readable code with proper comments.  
-   - Follow PEP 8 where applicable.  
+   * Create practical exercises related to any lesson.
+   * Include a solution file and make sure it runs correctly.
+   * Follow the existing naming conventions: `NN_exercises.md` and `NN_exercises_solutions.py`.
 
-6. **Fork & Pull Request Workflow**  
-   - Fork the repository  
-   - Make your changes in a new branch  
-   - Submit a PR with a descriptive title and summary  
-   - For more details: Check [first-contributions](https://github.com/firstcontributions/first-contributions)
+4. **Report Bugs or Errors**
+
+   * If a code snippet doesn’t run or behaves unexpectedly, open an issue.
+   * Provide the error message and the Python version you used.
+
+5. **Code Style and Standards**
+
+   * Use clear, readable code with proper comments.
+   * Follow PEP 8 where applicable.
+
+6. **Fork & Pull Request Workflow**
+
+   * Fork the repository
+   * Make your changes in a new branch
+   * Submit a PR with a descriptive title and summary
+   * For more details: Check [first-contributions](https://github.com/firstcontributions/first-contributions)
 
 > Your contributions help make this repo better for everyone learning Python!
-> If you like this repository **motivate us by putting a star to this repository** ...
 
----
+If you like this repository, **[motivate us by starring this repo](https://github.com/khushal-solves/python-notes/stargazers)**.
+
