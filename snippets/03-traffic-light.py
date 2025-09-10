@@ -7,15 +7,6 @@ GREEN = "\033[32m"
 YELLOW = "\033[33m"
 RESET = "\033[0m"   # back to default
 
-import time
-import sys
-
-# ANSI color codes
-RED = "\033[31m"
-GREEN = "\033[32m"
-YELLOW = "\033[33m"
-RESET = "\033[0m"   # back to default
-
 
 def countdown(seconds, message, color):
     """Show countdown with colored message, plain dots, and live timer."""
