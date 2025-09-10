@@ -1,5 +1,8 @@
 # Code of Conduct
 
+_हिंदी में भी उपलब्ध: [CODE_OF_CONDUCT_HI.md](CODE_OF_CONDUCT_HI.md)_
+
+
 The [khushal-solves](https://github.com/khushal-solves/) community is committed to creating a safe, inclusive, and respectful environment for all contributors, regardless of their backgrounds or identities. We expect all members of the community to abide by the following code of conduct.
 
 ## Expected Behavior
