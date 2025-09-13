@@ -117,6 +117,8 @@ data = b"hello"   # bytes
 arr = bytearray([65, 66, 67])
 ```
 
+[More Details](03-binary-types.md)
+
 ---
 
 ## Special Type: `NoneType`
