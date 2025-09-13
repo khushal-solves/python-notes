@@ -1,5 +1,3 @@
----
-
 ## Binary Types
 
 Binary data types are used when you need to store or manipulate **raw data** (like images, audio files, network packets, or encoded text). They are not for human-readable strings, but for **bytes** (0–255 values).
