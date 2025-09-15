@@ -92,7 +92,6 @@ def calculator():
 
     return f"Result: {result}"
 
-
-# Run the calculator once
-print(calculator())
+while True:
+    print(calculator())
 
