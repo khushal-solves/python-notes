@@ -83,7 +83,7 @@ def calculator():
     op = input("Enter operation: ").strip()
     
     if op == "exit":
-        return exit
+        return None     # Type 'exit' to quit
 
     if op in ("square", "cube", "sqrt", "log", "exp", "abs", "factorial", "sin", "cos", "tan", "deg", "rad"):
         num = float(input("Enter the number: "))
@@ -96,8 +96,8 @@ def calculator():
     return f"Result: {result}"
 
 while True:
-    output = (calculator())
-    if output == exit:
+    output = calculator()
+    if output is None:
         print("Exiting calculator. Goodbye!")
         break
     print(output)
