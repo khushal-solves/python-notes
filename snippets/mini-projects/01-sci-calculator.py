@@ -77,13 +77,14 @@ def double_input_operation(op, num1, num2):
 
 def calculator():
     print("\n=== Scientific Calculator ===")
-    print("Single-input operations: square, cube, sqrt, log, exp, abs, factorial, sin, cos, tan, deg, rad, exit")
+    print("Single-input operations: square, cube, sqrt, log, exp, abs, factorial, sin, cos, tan, deg, rad")
     print("Two-input operations: +, -, *, /, %, pow, log_base, gcd, lcm, hypot, max, min")
+    print("Type 'exit' to quit")
 
     op = input("Enter operation: ").strip()
     
     if op == "exit":
-        return None     # Type 'exit' to quit
+        return None
 
     if op in ("square", "cube", "sqrt", "log", "exp", "abs", "factorial", "sin", "cos", "tan", "deg", "rad"):
         num = float(input("Enter the number: "))
