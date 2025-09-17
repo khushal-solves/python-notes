@@ -79,8 +79,12 @@ def calculator():
     print("\n=== Scientific Calculator ===")
     print("Single-input operations: square, cube, sqrt, log, exp, abs, factorial, sin, cos, tan, deg, rad")
     print("Two-input operations: +, -, *, /, %, pow, log_base, gcd, lcm, hypot, max, min")
+    print("Type 'exit' to quit")
 
     op = input("Enter operation: ").strip()
+    
+    if op == "exit":
+        return None
 
     if op in ("square", "cube", "sqrt", "log", "exp", "abs", "factorial", "sin", "cos", "tan", "deg", "rad"):
         num = float(input("Enter the number: "))
@@ -92,7 +96,10 @@ def calculator():
 
     return f"Result: {result}"
 
-
-# Run the calculator once
-print(calculator())
+while True:
+    output = calculator()
+    if output is None:
+        print("Exiting calculator. Goodbye!")
+        break
+    print(output)
 
