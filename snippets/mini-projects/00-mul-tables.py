@@ -1,35 +1,22 @@
-def table(low, high):
+def print_tables(low: int, high: int) -> None:
     """
-    table(low, high): prints the table from low to high
+    Print multiplication tables from `low` to `high`, side by side.
+    Each table is printed from 1 to 10.
     """
-    
-    for i in range(1,11):
-        for j in range(low, high+1):
-            # We are print table with specified format like : _5 x _1 = __5
-            # to make the table neat
-            print(f"{j:2d} x {i:2d} = {i*j:4d}", end="\t")
-        print()
-    print()
+    for i in range(1, 11):  # fixed 1–10
+        row = []
+        for j in range(low, high + 1):
+            row.append(f"{j:2d} x {i:2d} = {i*j:4d}")
+        print("\t".join(row))
+    print()  # spacing after each block
 
-# Prinitng documentation for the table function
-print(table.__doc__)
 
+# Controller logic (outside the function)
 UPTO = 15       # Only printing till UPTO
-COLUMN = 4      # Number of tables on a row
+COLUMNS = 4     # Number of tables on a row
 START = 2       # Start tables from this value
-COUNT = (UPTO + COLUMN) // COLUMN
 
-number = START
-step = COLUMN - 1
+for block_start in range(START, UPTO + 1, COLUMNS):
+    block_end = min(block_start + COLUMNS - 1, UPTO)
+    print_tables(block_start, block_end)
 
-for _ in range(1, COUNT+1):    
-    if number > UPTO:
-        break
-    
-    if number + step > UPTO:
-        table(number, UPTO)
-    else:
-        # Printing in steps of COLUMN
-        table(number, number+step)
-    
-    number += COLUMN
