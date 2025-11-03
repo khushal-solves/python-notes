@@ -19,8 +19,8 @@ print("Line1\nLine2\tTabbed")    # \n, \t
 print(r"Raw string: backslash\n not interpreted")  # raw string literal
 
 section_header("f-strings and formatting")
-name = "Khushal"
-age = 25
+name = "Deepanshu"
+age = 20
 print(f"My name is {name} and I am {age} years old.")
 # advanced formatting
 pi = 3.1415926535
